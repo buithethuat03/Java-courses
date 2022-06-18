@@ -1,22 +1,24 @@
 import java.util.Scanner;
-public class Bai3 {
-    static int sum(int a, int b)
+public class Bai3
+{
+    int a,b;
+    void swapNumbers(Bai3 number)
     {
-        return a+b;
+        int temp=number.a;
+        number.a=number.b;
+        number.b=temp;
+    }
+    public static void main(String[] args)
+    {
+        Bai3 number =new Bai3();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        number.a=scanner.nextInt();
+        System.out.println("Enter the second number: ");
+        number.b=scanner.nextInt();
+
+        number.swapNumbers(number);
+        System.out.println("After swap, the first number is: "+number.a+", and the second number is: "+number.b);
     }
 
-    public static void main(String[]args)
-    {
-        int a=23;
-        int b=25;
-        int c=sum(a,b);
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Sum: "+c);
-        System.out.println("What is your name?");
-        String name=scanner.nextLine();
-        System.out.println("Your name is: "+name);
-        System.out.println("How old are you?");
-        int age=scanner.nextInt();
-        System.out.println("Your age is: "+age);
-    }
-}
+};
