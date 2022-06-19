@@ -26,7 +26,7 @@ public class Bai5 {
 
         Random random=new Random();
 
-        int d=Math.abs(random.nextInt())%100;
+        int d=random.nextInt(100);
         System.out.println("The result random between 0 and 99 is: "+d);
     }
 }
