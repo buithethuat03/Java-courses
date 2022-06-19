@@ -4,6 +4,7 @@ public class Bai5 {
     public static void main(String[] args){
         double x=90;
         double radx=Math.toRadians(x);
+        
         float y=2.818f;
         double sinx=Math.sin(radx);
         System.out.println(sinx);
