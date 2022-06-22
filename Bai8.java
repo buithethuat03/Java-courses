@@ -13,6 +13,9 @@ public class Bai8 {
         int result=name.length();
         System.out.println("The length of name is " + result);
 
+        int index=name.indexOf("d");
+        System.out.println("Index of d is: "+index);
+        
         char CharResult=name.charAt(2);
         System.out.println("The index of 2 is: "+CharResult);
 
