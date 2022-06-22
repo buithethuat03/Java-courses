@@ -9,7 +9,7 @@ public class Bai8 {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter your name: ");
         name=scanner.nextLine();
-        
+
         int result=name.length();
         System.out.println("The length of name is " + result);
 
@@ -19,6 +19,9 @@ public class Bai8 {
         boolean booResult=name.isEmpty();
         System.out.println(booResult? "The name is empty!":"The name isn't empty");
 
+        boolean equalResult=name.equalsIgnoreCase("thUat");
+        System.out.println(equalResult?"The name is equal ignoreCase with: thUat":"The name isn't equal ignoreCase with: thUat");
+ 
         String upperResult=name.toUpperCase();
         System.out.println("The upper name is: "+upperResult);
 
